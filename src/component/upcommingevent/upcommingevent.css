@@ -1,0 +1,49 @@
+
+/* ================================================ */
+/* ======================ABout  ==================== */
+/* ================================================ */
+.eventContainer{
+    display: grid;
+   grid-template-columns: 1fr;
+ 
+ 
+}
+.event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.eventTable table{
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.eventTable table tr td{
+    padding: 4rem;
+    text-align: center;
+}
+
+.eventTable .eventDate{
+    background: var(--color-darkblue);
+    color: var(--color-newwhite);
+}
+
+.eventTable .verticalLine{
+    padding-left: 10px; /* adjust padding as needed */
+    position: relative;
+} 
+.eventTable .verticalLine::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    bottom: 38px;
+    left: 0;
+    width: 1px; /* adjust width as needed */
+    background-color: black; /* adjust color as needed */
+  }

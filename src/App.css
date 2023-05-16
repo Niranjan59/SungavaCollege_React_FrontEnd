@@ -1,38 +1,374 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --color-darkblue:#002146;
+    --color-lightblue:rgba(0, 33, 70, 0.8);
+    --color-newprimary: #7380ec;
+    --color-newdanger: #ff7782;
+    --color-newsuccess: #41f1b6;
+    --color-newwarning: #ffbb55;
+    --color-newwhite: #ecf0f1;
+    --color-newinfo-dark: #7d8da1;
+    --color-newinfo-light: #dceleb;
+    --color-newdark: #363949;
+    --color-newlight: rgba(132, 139, 200, 0.18);
+    --color-newprimary-variant: #111e88;
+    --color-newdark-variant: #677483;
+    --color-newbackground: #1b1b11;
+    --ubuntu-font-family: 'Ubuntu', sans-serif;
+    --poppins-font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* overflow-x: hidden;
+    overflow-y: auto;  */
+ }
+
+
+
+
+ /* .crouselContainer {
+    width: 100vw;
+    height: 95vh;
+/*     background-image:url('crousel.jpg'), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 45.31%, rgba(0, 0, 0, 0) 55.21%, rgba(0, 0, 0, 0) 93.75%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19.79%, rgba(0, 0, 0, 0) 32.29%, rgba(0, 0, 0, 0) 45.83%, rgba(0, 0, 0, 0.5) 60.94%, rgba(0, 0, 0, 0.5) 69.27%, rgba(0, 0, 0, 0.5) 80.21%, rgba(0, 0, 0, 0.5) 80.73%, rgba(0, 0, 0, 0.5) 94.27%); */
+    /* background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url('crousel.jpg');
+     align-content: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+    overflow: hidden;
+} */
+
+.bannerUpper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10.8413px;
+    line-height: 14px;
+    /* or 125% */
+
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.bannerUpper .phone{
+    display: flex;
+    gap: 1rem;
+    margin-top: -50px;
+    height: 18px;
+}
+
+ .logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 659px;
+    margin-left: 8rem;
+    margin-top: 8rem;
+    color: white;
+    gap: 1rem;
+   
+}
+
+.banner .cname{
+    
+width: 500px;
+height: 17px;
+left: 0px;
+top: 0px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+/* or 120% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.banner .ctitle{
+ font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 60px;
+/* or 127% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+    
+}
+
+
+.banner .cntitle{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 17.8911px;
+line-height: 28px;
+/* or 156% */
+display: flex;
+align-items: center;
+color: #FFFFFF;
+}
+
+.suncol{
+    color: #FFC600;
+    padding:7px;
+}
+
+.crouselContainer .banner h5 {
+    width: 380px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2619px;
+    line-height: 20px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.crouselContainer .crouselBtn .programbtn{
+    box-sizing: border-box;
+    width: 167.25px;
+    height: 52.6px;
+    background: #FFC600;
+    border-radius: 4px;
+}
+
+.crouselContainer .crouselBtn .programbtn:hover{
+    background: transparent;
+    border: 2px solid #FFC600;
+    color: #FFFFFF;
+}
+
+
+
+/* =================================================== */
+
+.contactLine .contactphone{
+    background:var(--color-darkblue);
+    width: 100vw;
+    height: 40px;
+    display: flex;
+   justify-content: flex-end;
+    padding: 3px;
+    color: var(--color-newwhite);
+}
+
+/* =================================================== */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.navigation .slogo img{
+    height: 100px;
+ width: 100px;
+ margin-left:2.3rem
+ 
+}
+
+.nav-links{
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.nav-links a{
+   padding: 0.8rem;
+   text-decoration: none;
+   
+}
+
+.nav-links .loginBtn{
+    width: 91px;
+    height: 36.39px;
+    background-color: var(--color-darkblue);
+    border-radius: 2.95px;
+    color: var(--color-newwhite);
+}
+
+.nav-links .loginBtn:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-darkblue);
+    border-radius: 2.95px;
+    color: var(--color-darkblue);
+}
+
+
+/* ================================================ */
+/* ======================ABout  ==================== */
+/* ================================================ */
+.aboutContainer{
+    background: var(--color-newwhite);
+    width: 100%;
+    height: 600px;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    position: absolute;
+    margin:4rem 9rem;
+    gap: 9rem; 
+}
+
+.about .aboutContent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+.about .aboutImage{
+    width: 612px;
+}
+
+.about .aboutImage img{
+    width: 600px;
+}
+
+.about .aboutContent h3{
+font-family: 'Montserrat';
+width: 175px;
+height: 20px;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+color: var(--color-darkblue);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about .aboutContent h2{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 38px;
+color: var(--color-darkblue);
+}
+
+.about .aboutContent p{
+    color: #505050;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.455px;
+    line-height: 25px;
+}
+
+.about .aboutContent .readMore{
+    background: var(--color-darkblue);
+    border-radius: 2px;
+    width: 150.48px;
+    height: 47.81px;
+    color: var(--color-newwhite);
+    }
+
+.about .aboutContent .readMore:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-darkblue);
+    border-radius: 2.95px;
+    color: var(--color-darkblue);
+}
+
+
+/* ================================================ */
+/* ======================ABout  ==================== */
+/* ================================================ */
+.eventContainer{
+    display: grid;
+   grid-template-columns: 1fr;
+ 
+ 
+}
+.event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.eventTable table{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.eventTable table tr td{
+    padding: 4rem;
+    text-align: center;
+}
+
+.eventTable .eventDate{
+    background: var(--color-darkblue);
+    color: var(--color-newwhite);
+}
+
+.eventTable .verticalLine{
+    padding-left: 10px; /* adjust padding as needed */
+    position: relative;
+} 
+.eventTable .verticalLine::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    bottom: 38px;
+    left: 0;
+    width: 1px; /* adjust width as needed */
+    background-color: black; /* adjust color as needed */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+  /* ======================================================BOOTStrap CSS=========================================================== */
+  

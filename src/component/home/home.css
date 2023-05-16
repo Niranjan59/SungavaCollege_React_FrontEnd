@@ -1,0 +1,257 @@
+:root{
+    --color-darkblue:#002146;
+    --color-newwhite: #ecf0f1;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* overflow-x: hidden;
+    overflow-y: auto;  */
+ }
+
+
+ /* ========================================= */
+ .crouselContainer {
+    width: 100vw;
+    height: 800px;
+/*     background-image:url('crousel.jpg'), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 45.31%, rgba(0, 0, 0, 0) 55.21%, rgba(0, 0, 0, 0) 93.75%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19.79%, rgba(0, 0, 0, 0) 32.29%, rgba(0, 0, 0, 0) 45.83%, rgba(0, 0, 0, 0.5) 60.94%, rgba(0, 0, 0, 0.5) 69.27%, rgba(0, 0, 0, 0.5) 80.21%, rgba(0, 0, 0, 0.5) 80.73%, rgba(0, 0, 0, 0.5) 94.27%); */
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), /* transparent gradient layer */
+    url('https://sungavacollege.edu.np/content/uploads/sliderImages/43688327_595308557552638_72314394427523072_n.jpg');
+     align-content: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+    overflow: hidden;
+}
+
+.bannerUpper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10.8413px;
+    line-height: 14px;
+    /* or 125% */
+
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+.bannerUpper .phone{
+    display: flex;
+    gap: 1rem;
+    margin-top: -50px;
+    height: 18px;
+    color: #ecf0f1;
+}
+
+ .logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 659px;
+    margin-left: 8rem;
+    margin-top: 8rem;
+    color: white;
+    gap: 1rem;
+}
+
+.bannerUpper h3{
+    color: #ecf0f1;
+}
+
+.banner h3{
+    color:#ecf0f1
+}
+
+.banner h4{
+    color:#ecf0f1
+}
+
+.contactLine h3{
+    color: #ecf0f1;
+}
+
+.banner .cname{
+    
+width: 500px;
+height: 17px;
+left: 0px;
+top: 0px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+/* or 120% */
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.banner .ctitle{
+ font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 60px;
+/* or 127% */
+display: flex;
+align-items: center;
+color: #FFFFFF;
+    
+}
+
+
+.banner .cntitle{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 17.8911px;
+line-height: 28px;
+/* or 156% */
+display: flex;
+align-items: center;
+color: #FFFFFF;
+}
+
+.suncol{
+    color: #FFC600;
+    padding:7px;
+}
+
+.crouselContainer .banner h5 {
+    width: 380px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2619px;
+    line-height: 20px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.crouselContainer .crouselBtn .programbtn{
+    box-sizing: border-box;
+    width: 167.25px;
+    height: 52.6px;
+    background: #FFC600;
+    border-radius: 4px;
+}
+
+.crouselContainer .crouselBtn .programbtn:hover{
+    background: transparent;
+    border: 2px solid #FFC600;
+    color: #FFFFFF;
+}
+
+
+
+/* =================================================== */
+
+.contactLine .contactphone{
+    background:var(--color-darkblue);
+    width: 100vw;
+    height: 40px;
+    display: flex;
+   justify-content: flex-end;
+    padding: 3px;
+    color: var(--color-newwhite);
+}
+
+/* =================================================== */
+
+
+@media screen and (max-width:700px) {
+
+    .banner {
+        color: #ecf0f1;
+        width: 400px;
+        margin-left: 3rem;
+        margin-top: 8rem;      
+    }
+    
+}
+
+@media screen and (max-width:679px){
+    
+    .bannerUpper .phone{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:543px){
+    .contactLine .contactphone{
+       justify-content: flex-end;
+       flex-direction: column;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .bannerUpper {
+        margin-left: -2rem;
+    }
+
+    .bannerUpper .phone{
+        font-size: 1rem;
+    }
+
+    .banner {
+        width: 300px;
+        margin-left: 1rem;
+        margin-top: 8rem;      
+    }
+
+    .banner .cname .suncol{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:390px){
+    
+    .contactLine  h3{
+       
+       font-size: 2rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
