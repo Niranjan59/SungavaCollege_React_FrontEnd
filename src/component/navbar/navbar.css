@@ -37,14 +37,23 @@
     z-index: 5;
     width: 100%;
     padding: 10px 0px;
-    background: #1b1b1b;
+    background: #282829;
     color: #fff;
+}
+
+.stickyAtPoint{
+    position: fixed;
+    top: 0;
 }
 
 .mynavbar.sticky {
     padding: 10px 0px;
     background: #1b1b1b;
     transition: all 0.3 ease;
+}
+
+.crouselBtn .programbtn{
+    margin: 0.4rem;
 }
 
 .mynavbar .content {
@@ -72,7 +81,7 @@
 
 .menu-list li a {
     text-decoration: none;
-    color: #fff;
+    color: #e4e8ec;
     margin-left: 10px;
     font-size: large;
     font-weight: 500;
@@ -82,7 +91,7 @@
 }
 
 .menu-list li a:hover {
-    color: aqua;
+    color: rgb(36, 198, 163);
 }
 
 
@@ -94,8 +103,6 @@
     display: none;
 }
 
-
-/* Not working don't know why? Below code */
 .icon .cancel-btn {
     position: absolute;
     top: 30px;
@@ -133,6 +140,7 @@ padding: 0 30px;
     }
 
     .mynavbar .menu-list {
+        z-index: 4;
         position: fixed;
         top: 0;
         left: -100%;
@@ -156,6 +164,7 @@ padding: 0 30px;
     .mynavbar .menu-list li {
         /* padding: 20px; */
         margin-top: 35px;
+        
     }
 
     .icon {

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
+import logo from '../../images/logo.png'
+
 
 const Navbar = () => {
     useEffect(() => {
@@ -26,30 +29,47 @@ const Navbar = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const navbar = document.getElementById('navbar');
+            const distanceFromTop = 840;
+            if (window.pageYOffset >= distanceFromTop) {
+                navbar.classList.add('stickyAtPoint');
+            } else {
+                navbar.classList.remove('stickyAtPoint');
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
         <div>
-            <nav className="mynavbar">
+            <nav id='navbar' className="mynavbar stickyAtPoint">
                 <div className="content">
                     <div className="logo">
-                        <img src="https://th.bing.com/th/id/R.7e8a0015935d244af373ffd25f878b7b?rik=1Ge0H7PVWxdkOw&pid=ImgRaw&r=0" height="50" />
+                        <img src={logo} height="50" />
                     </div>
                     <ul className="menu-list">
                         <div className="icon cancel-btn">
                             <i className="bi bi-x-circle"></i>
                         </div>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Student Achievment</a></li>
-                        <li><a href="#">Teacher Login</a></li>
-                        <li><a href="#">New Admission</a></li>
-                        <li><a href="#">News/Events</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"><Link to='/'> Home </Link></a></li>
+                        <li><a href="#"><Link to='/StudentAchievment'> Student Achievment</Link></a></li>
+                        <li><a href="#"> <Link to='/teacherLogin'>Teacher Login</Link> </a></li>
+                        <li><a href="#"> <Link to='/studentAdmission'>New Admission</Link> </a></li>
+                        <li><a href="#"> <Link to={'/newsEvent'}>News/Events</Link> </a></li>
+                        <li><a href="#"> <Link to='/clzContact'>Contact Us</Link> </a></li>
                     </ul>
                     <div className="icon menu-btn">
                         <i className="bi bi-list"></i>
                     </div>
                 </div>
             </nav>
-        </div>
+        </div >
     );
 };
 

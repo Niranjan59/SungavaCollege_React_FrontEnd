@@ -1,9 +1,11 @@
 import React from 'react';
 import './landingpage.css';
+import aboutCollege from '../../images/aboutCollege.png'
 
 const LandingPage = () => {
     return (
         <>
+            <div className="empty"></div>
             <header id="header" className="header">
                 <div className="header-content">
                     <div className="container">
@@ -11,23 +13,17 @@ const LandingPage = () => {
                             <div className="col-lg-6 mt-lg-4">
                                 <div className="text-container">
                                     <h1>
-                                        <span className="turquoise">Modern English</span> <br />
-                                        <span className="turquoise_two"> Boarding School </span>
+                                        <span className="turquoise">About Our College</span> <br />
+                                        <span className="turquoise_two"> A Few Words About the College </span>
                                     </h1>
                                     <p className="p-large principalmessage">
                                         Dear students and parents,<br />
                                         <br />
-                                        It gives me great pleasure to welcome you all to our secondary school. As the principal, I believe that
-                                        our school is a place where students can thrive academically, socially, and emotionally. We have a team
-                                        of highly qualified and dedicated teachers who are committed to providing our students with a challenging
-                                        and stimulating learning environment. Our school values inclusivity, diversity, and respect for all
-                                        individuals, and we encourage our students to embrace these values throughout their time with us. I look
-                                        forward to working with our students and parents to ensure that our school continues to be a safe and
-                                        nurturing place where our students can achieve their full potential.<br />
+                                        Sungava College, established by reputed academicians and educationists, is a premier academic institution in Nepal. Within a short span of time, the institution has been able to prove itself a leading institution in imparting education inimitably. The way, the institution imparts education blends knowledge with skills such that practical, creative and purposeful learning is sure to forthcoming. Realizing that education is the substratum of the societal change, Sungava is indefatigably involved in discharging such social responsibility..........<br />
                                         <br />
                                         Sincerely,<br />
                                         <br />
-                                        [K N Silwal]
+                                        Campus Chief Message
                                     </p>
                                     <a className="btn-solid-lg page-scroll" href="#services">
                                         DISCOVER
@@ -36,7 +32,7 @@ const LandingPage = () => {
                             </div>
                             <div className="col-lg-6">
                                 <div className="image-container">
-                                    <img className="img-fluid" src="../../images/KNSir.jpg" alt="alternative" />
+                                    <img className="img-fluid" src={aboutCollege} alt="alternative" />
                                 </div>
                             </div>
                         </div>

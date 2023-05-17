@@ -1,0 +1,29 @@
+.contactSection img{
+    width: 637.88px;
+    height: 662px;
+}
+
+@media screen and (max-width:750px){
+    .contactBox{
+        width: 600px;
+    }
+    .contactSection .contactImage img{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:675px){
+    .contactBox{
+        width: 300px;
+    }
+    .contactSection .contactImage img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px){
+    Box{
+        width: 300px;
+    }
+}

@@ -1,7 +1,7 @@
 .middle-banner {
     height: 30rem;
     width: 100vw;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../../images/banner.jpg) no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../../images/crousel.jpg) no-repeat;
     background-attachment: fixed;
 }
 

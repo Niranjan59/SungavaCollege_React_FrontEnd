@@ -45,5 +45,12 @@
     bottom: 38px;
     left: 0;
     width: 1px; /* adjust width as needed */
-    background-color: black; /* adjust color as needed */
+    background-color: #000000; /* adjust color as needed */
+  }
+
+
+  @media screen and (max-width:521px){
+    .eventTable table tr td{
+        padding: 2rem;
+    }
   }

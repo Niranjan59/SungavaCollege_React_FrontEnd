@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css'
+import logo from '../../images/logo.png'
 
 const Home = () => {
     return (
@@ -7,12 +8,12 @@ const Home = () => {
             <div className="crouselContainer">
                 <div className="bannerUpper">
                     <div className="logo">
-                        <img src="https://th.bing.com/th/id/R.7e8a0015935d244af373ffd25f878b7b?rik=1Ge0H7PVWxdkOw&pid=ImgRaw&r=0"
+                        <img src={logo}
                             alt="LOGO HERE" />
                     </div>
-                    <div className="phone text-danger.sssssss">
-                        <h3>info@sungavacollege.edu.np </h3>
-                        <h3>056-582611, 583408</h3>
+                    <div className="phone">
+                        <p><a href="">info@sungavacollege.edu.np</a>  </p>
+                        <p>056-582611, 583408</p>
                     </div>
                 </div>
                 <div className="banner">
@@ -37,8 +38,8 @@ const Home = () => {
 
             <div className="contactLine">
                 <div className="contactphone">
-                    <h3>info@sungavacollege.edu.np </h3>
-                    <h3>056-582611, 583408</h3>
+                    <p><a href="">info@sungavacollege.edu.np</a>  </p>
+                    <p>056-582611, 583408</p>
                 </div>
             </div>
         </div>

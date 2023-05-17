@@ -24,7 +24,7 @@
 /*     background-image:url('crousel.jpg'), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 45.31%, rgba(0, 0, 0, 0) 55.21%, rgba(0, 0, 0, 0) 93.75%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19.79%, rgba(0, 0, 0, 0) 32.29%, rgba(0, 0, 0, 0) 45.83%, rgba(0, 0, 0, 0.5) 60.94%, rgba(0, 0, 0, 0.5) 69.27%, rgba(0, 0, 0, 0.5) 80.21%, rgba(0, 0, 0, 0.5) 80.73%, rgba(0, 0, 0, 0.5) 94.27%); */
     background-image: 
     linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), /* transparent gradient layer */
-    url('https://sungavacollege.edu.np/content/uploads/sliderImages/43688327_595308557552638_72314394427523072_n.jpg');
+    url('../../images/crousel.jpg');
      align-content: center;
     background-repeat: no-repeat;
      background-size: cover;
@@ -85,8 +85,26 @@
     color:#ecf0f1
 }
 
-.contactLine h3{
+.phone p a{
     color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.phone p{
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+.contactLine p a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+.contactLine p{
+    color: #ecf0f1;
+    
 }
 
 .banner .cname{
@@ -179,9 +197,12 @@ color: #FFFFFF;
     width: 100vw;
     height: 40px;
     display: flex;
-   justify-content: flex-end;
-    padding: 3px;
+    justify-content: flex-end;
     color: var(--color-newwhite);
+}
+
+.contactLine .contactphone p{
+    padding: 10px;
 }
 
 /* =================================================== */

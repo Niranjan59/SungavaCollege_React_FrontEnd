@@ -1,25 +1,27 @@
 // import './App.css';
-import About from './component/about/About';
-import NewAbout from './component/add_about/NewAbout';
-import ExtraCurriculum from './component/extracurriculum/ExtraCurriculum';
-import Home from './component/home/Home';
-import LandingPage from './component/landingpage/landingpage';
-import MiddleName from './component/middleName/MiddleName';
-import Navbar from './component/navbar/Navbar';
-import UpcommingEvent from './component/upcommingevent/UpcommingEvent';
+
+import Index from "./component/Index";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import StudentAchievment from "./component/studentAchievment/StudentAchievment";
+import TeacherLogin from "./component/teacherlogin/TeacherLogin";
+import Admission from "./component/admission/Admission";
+import NewsEvent from "./component/newsEvent/NewsEvent";
+import ClzContact from "./component/clzContact/ClzContact";
+
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Navbar />
-      <LandingPage />
-      <UpcommingEvent />
-      <ExtraCurriculum />
-      <MiddleName />
-      <About />
-      <NewAbout />
-
+      <Router>
+        <Routes>
+          <Route path='/' element={<Index />} />
+          <Route path='/StudentAchievment' element={<StudentAchievment />} />
+          <Route path='/teacherLogin' element={<TeacherLogin />} />
+          <Route path='/studentAdmission' element={<Admission />} />
+          <Route path='/newsEvent' element={<NewsEvent />} />
+          <Route path='/clzContact' element={<ClzContact />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
