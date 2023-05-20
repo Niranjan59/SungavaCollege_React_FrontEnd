@@ -17,7 +17,7 @@ const Features = () => {
                 </div>
             </div>
             <div className="container-fluid">
-                <div className="row justify-content-evenly">
+                <div className="row justify-content-evenly featuresSection">
                     <div className="col-lg-3">
                         <div class="nft">
                             <div class='main'>
@@ -28,7 +28,7 @@ const Features = () => {
                                     <div class='wrapper'>
                                         <img src="https://scontent.fktm6-1.fna.fbcdn.net/v/t39.30808-6/334043004_3357926181134680_8534918226015374733_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=qg8SZd4ha-MAX8NF-ZH&_nc_ht=scontent.fktm6-1.fna&oh=00_AfAVnMbeE-AzyKhrICETcIlrjGzFfqpaz6UueWXVCULANQ&oe=64675CD2" alt="Creator" />
                                     </div>
-                                    <p><ins>Creation of</ins> Kiberbash</p>
+                                    <p><ins>Contributed by</ins> Kumar</p>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const Features = () => {
                                     <div class='wrapper'>
                                         <img src="https://scontent.fktm6-1.fna.fbcdn.net/v/t39.30808-6/334043004_3357926181134680_8534918226015374733_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=qg8SZd4ha-MAX8NF-ZH&_nc_ht=scontent.fktm6-1.fna&oh=00_AfAVnMbeE-AzyKhrICETcIlrjGzFfqpaz6UueWXVCULANQ&oe=64675CD2" alt="Creator" />
                                     </div>
-                                    <p><ins>Creation of</ins> Kiberbash</p>
+                                    <p><ins>Contributed by</ins> Kumar</p>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ const Features = () => {
                                     <div class='wrapper'>
                                         <img src="https://scontent.fktm6-1.fna.fbcdn.net/v/t39.30808-6/334043004_3357926181134680_8534918226015374733_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=qg8SZd4ha-MAX8NF-ZH&_nc_ht=scontent.fktm6-1.fna&oh=00_AfAVnMbeE-AzyKhrICETcIlrjGzFfqpaz6UueWXVCULANQ&oe=64675CD2" alt="Creator" />
                                     </div>
-                                    <p><ins>Creation of</ins> Kumar Chaudhary</p>
+                                    <p><ins>Contributed by</ins> Kumar</p>
                                 </div>
                             </div>
                         </div>

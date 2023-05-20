@@ -19,7 +19,7 @@ const Index = () => {
             <Home />
             <Navbar />
             <LandingPage />
-            {/* <UpcommingEvent /> */}
+            <UpcommingEvent />
             <ExtraCurriculum />
             <MiddleName />
             <About />

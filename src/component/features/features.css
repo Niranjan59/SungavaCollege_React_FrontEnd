@@ -105,4 +105,19 @@ line-height: 52px;
     top: -100%;
     left: 200%;
   }
+
+@media screen and (max-width:1200px) {
+  .featuresSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  } 
+}
+
+
+@media screen and (max-width:768px) {
+  .featuresSection{
+    display: grid;
+    grid-template-columns: 1fr;
+  } 
+}
   
